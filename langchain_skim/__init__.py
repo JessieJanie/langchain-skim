@@ -3,4 +3,4 @@
 from langchain_skim.tool import SkimReader, SkimReadInput
 
 __all__ = ["SkimReader", "SkimReadInput"]
-__version__ = "0.1.0"
+__version__ = "0.1.1"

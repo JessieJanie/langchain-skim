@@ -183,6 +183,12 @@ class SkimReader(BaseTool):
                 f"did not reach the Skim API. Underlying error: {exc}"
             ) from exc
 
+        if not isinstance(data, dict):
+            raise ToolException(
+                "Skim returned an unexpected response shape (expected a JSON object). "
+                "This usually means the request did not reach the Skim API."
+            )
+
         markdown = data.get("markdown") or data.get("text") or ""
 
         metadata = data.get("metadata")

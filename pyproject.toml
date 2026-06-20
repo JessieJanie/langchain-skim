@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "langchain-skim"
-version = "0.1.0"
+version = "0.1.1"
 description = "LangChain tool for Skim — clean web reader for AI agents. Pays $0.002/call in USDC over x402. No signup, no API keys."
 readme = "README.md"
 license = { text = "MIT" }
